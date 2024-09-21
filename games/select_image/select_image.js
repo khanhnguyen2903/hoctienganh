@@ -57,9 +57,8 @@ function display_images(index) {
   let arr_wrong_random = shuffleArray(arr_wrong);
   //console.log("arr_wrong_random: " + arr_wrong_random);
 
-  let url_correct =
-    "/" + questions[topic].items[arr_answer_correct[index]].url_image;
-  let url_wrong = "/" + questions[topic].items[arr_wrong_random[0]].url_image;
+  let url_correct = "https://khanhnguyen2903.github.io/hoctienganh/" + questions[topic].items[arr_answer_correct[index]].url_image;
+  let url_wrong = "https://khanhnguyen2903.github.io/hoctienganh/" + questions[topic].items[arr_wrong_random[0]].url_image;
   // console.log("url_correct: " + url_correct);
   // console.log("url_wrong: " + url_wrong);
   let arr_url_image = [url_correct, url_wrong];
