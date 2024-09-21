@@ -132,5 +132,5 @@ btn_play_again.addEventListener("click", () => {
 });
 
 btn_play_game.addEventListener("click", () => {
-  window.location.href = "https://vnexpress.net/";
+  window.location.href = "https://khanhnguyen2903.github.io/hoctienganh/games/select_image/select_image.html";
 });
