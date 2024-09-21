@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="select_image.css" />
+    <title>Game Select Image</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="speaker__">
+        <img src="/images/speaker.jpg" class="speaker" />
+      </div>
+      <div class="image_select">
+        <button class="btn_control btn_back">Back</button>
+        <img
+          src="/images/bear.jpg"
+          alt="image_left"
+          class="image_question image_left"
+        />
+        <img
+          src="/images/bird.jpg"
+          alt="image_right"
+          class="image_question image_right"
+        />
+        <button class="btn_control btn_next">Next</button>
+      </div>
+    </div>
+    <script src="/questions/question_word.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=l2faNdnD"></script>
+    <script src="select_image.js"></script>
+  </body>
+</html>

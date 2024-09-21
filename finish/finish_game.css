@@ -1,0 +1,42 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+  background-color: yellowgreen;
+}
+
+.main {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 32px;
+  color: red;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.image__ {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.image {
+  width: 200px;
+  margin-top: 50px;
+}
+
+.starCanvas {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+}

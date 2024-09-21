@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="listening.css" />
+    <title>Listening</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="back">
+        <button class="btn_control btn_back">Back</button>
+      </div>
+      <div class="center">
+        <div id="image_question">
+          <img src="" alt="image question" class="img_word" />
+        </div>
+        <div class="word__">
+          <img
+            src="images/speaker.jpg"
+            alt="speaker-icon"
+            class="icon_speaker speaker_word"
+          />
+          <p class="word"></p>
+        </div>
+        <div class="sentence__">
+          <img
+            src="images/speaker.jpg"
+            alt="speaker-icon"
+            class="icon_speaker speaker_sentence"
+          />
+          <p class="sentence"></p>
+        </div>
+
+        <!-- <div class="button_listen">
+          <img
+            src="images/speaker.jpg"
+            alt="speaker-icon"
+            class="icon_speaker"
+          />
+          <button class="btn_listen">Listen</button>
+        </div> -->
+      </div>
+      <div class="next">
+        <button class="btn_control btn_next">Next</button>
+      </div>
+    </div>
+    <div class="end">
+      <button class="btn_play_again btn_play">Listen again</button>
+      <button class="btn_play_game btn_play">Play game 1</button>
+    </div>
+
+    <script src="questions/question_word.js"></script>
+    <script src="https://code.responsivevoice.org/responsivevoice.js?key=l2faNdnD"></script>
+    <script src="listening.js"></script>
+  </body>
+</html>

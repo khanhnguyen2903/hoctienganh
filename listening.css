@@ -1,0 +1,108 @@
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  font-size: 16px;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.img_word {
+  height: 350px;
+  margin-top: 10px;
+}
+
+.word__ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.word {
+  color: #e42f2f;
+  margin-left: 5px;
+}
+
+.sentence__ {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sentence {
+  color: #333;
+  margin-left: 5px;
+}
+
+.button_listen {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px; /* Khoảng cách giữa icon và button */
+  padding: 10px;
+}
+
+.icon_speaker {
+  width: 50px;
+  cursor: pointer;
+}
+
+.btn_play {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  width: 150px;
+}
+
+.btn_play:hover {
+  background-color: #0056b3;
+}
+
+.next {
+  margin-left: 20px;
+  margin-bottom: 50px;
+}
+
+.back {
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.btn_control {
+  padding: 10px 20px;
+  font-size: 16px;
+  background-color: #f0f0f0;
+  color: #333;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.btn_control:hover {
+  background-color: #333;
+  color: #f0f0f0;
+}
+
+.end {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 10px;
+}
