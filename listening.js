@@ -20,7 +20,7 @@ btn_play_game.style.display = "none";
 // function display question
 function displayQuestion(item) {
   // Display image
-  img_question.setAttribute("src", item.url_image);
+  img_question.setAttribute("src", url + item.name_image);
   // Display word
   const textNode = document.createTextNode(item.answer);
   word.appendChild(textNode);
@@ -132,5 +132,5 @@ btn_play_again.addEventListener("click", () => {
 });
 
 btn_play_game.addEventListener("click", () => {
-  window.location.href = "https://khanhnguyen2903.github.io/hoctienganh/games/select_image/select_image.html";
+  window.location.href = "./games/select_image/select_image.html";
 });

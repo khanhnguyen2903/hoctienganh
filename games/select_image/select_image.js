@@ -23,6 +23,8 @@ function listen(word) {
   responsiveVoice.speak(word, "UK English Male");
 }
 
+speaker.setAttribute("src", url + "speaker.jpg");
+
 function createArray(n) {
   let arr = [];
   for (let i = 0; i <= n - 1; i++) {
@@ -57,16 +59,17 @@ function display_images(index) {
   let arr_wrong_random = shuffleArray(arr_wrong);
   //console.log("arr_wrong_random: " + arr_wrong_random);
 
-  let url_correct = "https://khanhnguyen2903.github.io/hoctienganh/" + questions[topic].items[arr_answer_correct[index]].url_image;
-  let url_wrong = "https://khanhnguyen2903.github.io/hoctienganh/" + questions[topic].items[arr_wrong_random[0]].url_image;
-  console.log("url_correct: " + url_correct);
+  let name_correct =
+    "/" + questions[topic].items[arr_answer_correct[index]].name_image;
+  let name_wrong = "/" + questions[topic].items[arr_wrong_random[0]].name_image;
+  // console.log("url_correct: " + url_correct);
   // console.log("url_wrong: " + url_wrong);
-  let arr_url_image = [url_correct, url_wrong];
+  let arr_name_image = [name_correct, name_wrong];
   //console.log(arr_url_image);
-  let arr_url_random = shuffleArray(arr_url_image);
+  let arr_name_random = shuffleArray(arr_name_image);
   //console.log(arr_url_random);
-  image_left.setAttribute("src", arr_url_random[0]);
-  image_right.setAttribute("src", arr_url_random[1]);
+  image_left.setAttribute("src", url + arr_name_random[0]);
+  image_right.setAttribute("src", url + arr_name_random[1]);
   //console.log(questions[topic].items[arr_random[0]].url_image);
   if (level === 0) {
     answer_correct = questions[topic].items[arr_answer_correct[index]].answer;
@@ -123,8 +126,9 @@ function check_answer(url_image) {
     // delay 2s
     async function use_delay() {
       await delay(2000); // Đợi 2 giây
-      if (index === 5) {
+      if (index === items_length - 1) {
         console.log("Finished !!!");
+        window.location.href = "/finish/finish_game.html";
       } else {
         next_question();
       }
@@ -157,11 +161,15 @@ function wrong() {
 function next_question() {
   index++;
   remove_pop_up();
-  if (index === items_length) {
+  if (index === items_length - 1) {
     //level = 1;
-    index = 0;
+    //index = 0;
     //alert("Finish !!!");
-    display_images(index);
+    //display_images(index);
+    console.log(index);
+    console.log("Finish !!!");
+
+    btn_next.style.display = "none";
   }
   display_images(index);
 }
@@ -172,6 +180,7 @@ function back_question() {
   if (index === 0) {
     btn_back.style.display = "none";
   }
+  btn_next.style.display = "block";
   display_images(index);
 }
 
