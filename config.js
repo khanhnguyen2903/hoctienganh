@@ -1,1 +1,1 @@
-const url = "http://127.0.0.1:5500/images/";
+const url = "https://khanhnguyen2903.github.io/hoctienganh/images/";
