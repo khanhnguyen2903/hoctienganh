@@ -147,13 +147,13 @@ function check_answer(url_image) {
 }
 
 function correct() {
-  let audio = new Audio("/sound/correct.mp3");
+  let audio = new Audio(url_host + "sound/correct.mp3");
   audio.play();
   //remove_pop_up();
 }
 
 function wrong() {
-  let audio = new Audio("/sound/wrong.mp3");
+  let audio = new Audio(url_host + "sound/wrong.mp3");
   audio.play();
   //remove_pop_up();
 }
