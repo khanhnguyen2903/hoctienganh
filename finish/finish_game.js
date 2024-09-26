@@ -56,5 +56,5 @@ window.addEventListener("resize", () => {
   canvas.height = window.innerHeight;
 });
 
-let audio = new Audio("/sound/yeah.mp3");
+let audio = new Audio(url_host + "sound/yeah.mp3");
 audio.play();
