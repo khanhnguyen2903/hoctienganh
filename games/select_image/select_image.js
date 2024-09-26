@@ -128,7 +128,7 @@ function check_answer(url_image) {
       await delay(2000); // Đợi 2 giây
       if (index === items_length - 1) {
         console.log("Finished !!!");
-        window.location.href = "/finish/finish_game.html";
+        window.location.href = url_host + "finish/finish_game.html";
       } else {
         next_question();
       }
